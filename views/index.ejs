@@ -2,24 +2,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Your App Name</title>
-  <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8" />
+  <title>Beanster</title>
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <header>
-    <h1>Welcome to Your App Name!</h1>
+    <h1>Welcome to Beanster!</h1>
     <nav>
       <a href="/">Home</a>
       <a href="/terms">Terms of Service</a>
       <a href="/privacy">Privacy Policy</a>
       <a href="/contact">Contact Us</a>
+      <% if (user) { %>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/logout">Logout</a>
+      <% } else { %>
+        <a href="/auth/google">Login with Google</a>
+      <% } %>
     </nav>
   </header>
   <main>
-    <h2>About SecureConnect</h2>
+    <h2>About Beanster</h2>
     <p>
-      SecureConnect is an exclusive platform designed to provide a seamless and secure experience for authorized users. Our app allows manually verified users to integrate their content with TikTok securely and efficiently. We prioritize your privacy and security while offering top-notch functionality.
+      Beanster is an exclusive platform designed to provide a seamless and secure experience for authorized users. Our app allows manually verified users to integrate their content with TikTok securely and efficiently. We prioritize your privacy and security while offering top-notch functionality.
     </p>
 
     <h2>Features</h2>
@@ -32,11 +38,11 @@
 
     <h2>Getting Started</h2>
     <p>
-      To begin using SecureConnect, please <a href="/register">Register</a> or <a href="/login">Log In</a> using our secure OAuth process.
+      To begin using Beanster, please <a href="/auth/google">Login with Google</a> using our secure OAuth process.
     </p>
   </main>
   <footer>
-    <p>&copy; 2023 Your Company Name</p>
+    <p>&copy; 2024 Beanster</p>
   </footer>
 </body>
 </html>

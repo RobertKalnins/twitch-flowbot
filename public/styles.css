@@ -1,0 +1,51 @@
+/* public/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1em;
+  }
+  
+  header h1, footer p {
+    margin: 0;
+  }
+  
+  nav {
+    margin-top: 0.5em;
+  }
+  
+  nav a {
+    color: #fff;
+    margin-right: 1em;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 1em;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 2em;
+  }
+  
+  footer {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  

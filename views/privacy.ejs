@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy - Your App Name</title>
-  <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8" />
+  <title>Privacy Policy - Beanster</title>
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <header>
@@ -14,15 +14,118 @@
       <a href="/terms">Terms of Service</a>
       <a href="/privacy">Privacy Policy</a>
       <a href="/contact">Contact Us</a>
+      <% if (user) { %>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/logout">Logout</a>
+      <% } else { %>
+        <a href="/auth/google">Login with Google</a>
+      <% } %>
     </nav>
   </header>
   <main>
-    <h2>Last Updated: [Insert Date]</h2>
-    <!-- Include your detailed Privacy Policy here -->
-    <!-- Make sure to replace placeholders with your actual information -->
+    <h2>Last Updated: September 18, 2024</h2>
+
+    <h3>1. Introduction</h3>
+    <p>
+      Welcome to <strong>Beanster</strong> ("we", "us", or "our"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <strong>beanster.fun</strong> ("the Website") and use our services, including integrations with Google and TikTok.
+    </p>
+
+    <h3>2. Information We Collect</h3>
+    <p>We may collect personal information that you voluntarily provide to us when registering for an account, expressing an interest in obtaining information about us or our products and services, or otherwise contacting us.</p>
+    <ul>
+      <li><strong>Personal Data:</strong> Name, email address, and any other information you provide during registration.</li>
+      <li><strong>OAuth Data:</strong> Information obtained through third-party OAuth services such as Google and TikTok, including your public profile information and email address.</li>
+      <li><strong>Usage Data:</strong> Information about how you use our Website and services.</li>
+      <li><strong>Cookies and Similar Technologies:</strong> Data collected via cookies, web beacons, and other tracking technologies.</li>
+    </ul>
+
+    <h3>3. How We Use Your Information</h3>
+    <p>We use the information we collect or receive:</p>
+    <ul>
+      <li>To facilitate account creation and logon processes, including through Google and TikTok OAuth services.</li>
+      <li>To provide, operate, and maintain our services.</li>
+      <li>To send administrative information to you, such as updates and security alerts.</li>
+      <li>To enforce our terms, conditions, and policies.</li>
+      <li>To comply with legal obligations and protect your rights.</li>
+    </ul>
+
+    <h3>4. Disclosure of Your Information</h3>
+    <p>We may share information we have collected about you in certain situations. Your information may be disclosed as follows:</p>
+    <ul>
+      <li><strong>Third-Party Service Providers:</strong> We may share your information with third parties that perform services for us or on our behalf, such as data analysis, email delivery, hosting services, customer service, and marketing assistance.</li>
+      <li><strong>By Law or to Protect Rights:</strong> If we believe release of information about you is necessary to respond to legal processes or protect the rights, property, and safety of others.</li>
+      <li><strong>Business Transfers:</strong> In the event of a merger, sale, or transfer of company assets, your information may be transferred to the new entity.</li>
+      <li><strong>With Your Consent:</strong> We may disclose your personal information for any other purpose with your consent.</li>
+    </ul>
+
+    <h3>5. Integration with Google and TikTok Services</h3>
+    <p>
+      Our services utilize authentication and other features provided by Google and TikTok. When you authenticate using these services, we collect certain information from your accounts, including your name, email address, and public profile information.
+    </p>
+    <p>
+      <strong>Google OAuth:</strong> By using Google Sign-In, you agree to Google's Terms of Service and Privacy Policy. We access your basic profile information and email address to authenticate you and provide access to our services.
+    </p>
+    <p>
+      <strong>TikTok Integration:</strong> By connecting your TikTok account, you agree to TikTok's Terms of Service and Privacy Policy. We collect information necessary to integrate your content with TikTok, such as your TikTok user ID and profile information.
+    </p>
+    <p>
+      We do not have access to your passwords or sensitive account data from these third-party services. We use the information solely for the purposes outlined in this Privacy Policy.
+    </p>
+    <p>
+      For more information on their policies, please visit:
+    </p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+      <li><a href="https://www.tiktok.com/legal/privacy-policy">TikTok Privacy Policy</a></li>
+    </ul>
+
+    <h3>6. Cookies and Other Tracking Technologies</h3>
+    <p>
+      We may use cookies, web beacons, and other tracking technologies to collect and store your information. This helps us understand how you use the Website and improve your user experience. You can manage your cookie preferences through your browser settings.
+    </p>
+
+    <h3>7. Data Security</h3>
+    <p>
+      We use administrative, technical, and physical security measures to protect your personal information. While we strive to protect your personal data, no method of transmission over the Internet or electronic storage is 100% secure.
+    </p>
+
+    <h3>8. Your Rights</h3>
+    <p>You have the right to access, correct, or delete your personal information. To exercise these rights, please contact us at <a href="mailto:support@beanster.fun">support@beanster.fun</a>.</p>
+    <p>
+      If you are a resident of the European Economic Area (EEA), you have additional data protection rights under the General Data Protection Regulation (GDPR).
+    </p>
+
+    <h3>9. Children's Privacy</h3>
+    <p>
+      Our services are not intended for individuals under the age of 13. We do not knowingly collect personal information from children under 13. If you become aware that a child has provided us with personal information, please contact us, and we will take steps to delete such information.
+    </p>
+
+    <h3>10. International Data Transfers</h3>
+    <p>
+      Your information may be transferred to—and maintained on—computers located outside of your state, province, country, or other governmental jurisdiction where data protection laws may differ. By providing your information, you consent to this transfer.
+    </p>
+
+    <h3>11. Changes to This Privacy Policy</h3>
+    <p>
+      We may update our Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this Privacy Policy. You are advised to review this Privacy Policy periodically for any changes.
+    </p>
+
+    <h3>12. Contact Us</h3>
+    <p>
+      If you have questions or comments about this Privacy Policy, please contact us at:
+    </p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:support@beanster.fun">support@beanster.fun</a></li>
+      <li><strong>Address:</strong> Parcel Collect 10014 14520<br>
+        415 Sydney Road<br>
+        Brunswick VIC 3056<br>
+        Australia</li>
+    </ul>
+
+    <p><em>Disclaimer: This Privacy Policy is provided for informational purposes only and does not constitute legal advice. You should consult with a qualified attorney to ensure that your Privacy Policy complies with all applicable laws and adequately protects your interests.</em></p>
   </main>
   <footer>
-    <p>&copy; 2023 Your Company Name</p>
+    <p>&copy; 2024 Beanster</p>
   </footer>
 </body>
 </html>

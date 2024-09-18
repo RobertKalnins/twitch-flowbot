@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Us - Your App Name</title>
-  <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8" />
+  <title>Contact Us - Beanster</title>
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
   <header>
@@ -14,6 +14,12 @@
       <a href="/terms">Terms of Service</a>
       <a href="/privacy">Privacy Policy</a>
       <a href="/contact">Contact Us</a>
+      <% if (user) { %>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/logout">Logout</a>
+      <% } else { %>
+        <a href="/auth/google">Login with Google</a>
+      <% } %>
     </nav>
   </header>
   <main>
@@ -21,12 +27,15 @@
       If you have any questions or need assistance, feel free to reach out:
     </p>
     <ul>
-      <li><strong>Email:</strong> <a href="mailto:support@yourappname.com">support@yourappname.com</a></li>
-      <li><strong>Address:</strong> 1234 Privacy Lane, Secure City, Country</li>
+      <li><strong>Email:</strong> <a href="mailto:support@beanster.fun">support@beanster.fun</a></li>
+      <li><strong>Address:</strong> Parcel Collect 10014 14520<br>
+        415 Sydney Road<br>
+        Brunswick VIC 3056<br>
+        Australia</li>
     </ul>
   </main>
   <footer>
-    <p>&copy; 2023 Your Company Name</p>
+    <p>&copy; 2024 Beanster</p>
   </footer>
 </body>
 </html>
